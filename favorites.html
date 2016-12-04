@@ -1,0 +1,85 @@
+<head>
+    <title>Favorites</title>
+    <style type="text/css">
+        body{
+            font-family: sans-serif;
+        }
+        #navigation ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+    </style>
+    <script type="text/javascript" src="js/favorites.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="navigation">
+            <header>
+                <h1>Favorites</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">About Me</a>
+                    </li>
+                    <li class="active">
+                        <a href="favorites.html">Favorites</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="control">
+            <header>
+                <h2>Controls</h2>
+            </header>
+            
+            <section class="control">
+                <header>
+                    <h3>New Favorites</h3>
+             </header>
+            
+            <form action="javascript:createFavorite();" id="creator">
+                <fieldset>
+                    <label>Title</label>
+                    <input id="creator-title" type="text"/>
+                </fieldset>
+                <fieldset>
+                    <label>Desription</label>
+                    <div>
+                        <textarea id="creator-description" rows="5">
+                            
+                        </textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label>Media</label>
+                    <input id="creator-media" type="text"/>
+                </fieldset>
+                <fieldset>
+                    <button>Create</button>
+                </fieldset>
+                
+            </form>
+            
+            </section>
+        </div>
+        <div id="content">
+            <header>
+                <h2>Favorites</h2>
+            </header>
+             <article class="favorite">
+                 <header>
+                     <h3 class="title">FABULOUS DONALD TRUMP!!!!</h3>
+                 </header>
+                 <div class="media">
+                     <iframe src="//giphy.com/embed/BemnmYK1nCViw" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/donald-trump-BemnmYK1nCViw">via GIPHY</a></p>
+                 </div>
+                 
+                 <p class="description">
+                     
+                 </p>
+             </article>
+        </div>
+    </div>
+</body>
